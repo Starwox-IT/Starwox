@@ -1,0 +1,120 @@
+.about-hero{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.about-hero .about-hero-wrapper .about-hero-top{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-hero-text{
+    margin-right: 1em;
+}
+
+.about-hero-text h1{
+    font-size: 3rem;
+    margin-bottom: .5em;
+}
+
+.we{
+    color: var(--mainRed);
+}
+
+.about-hero-text p{
+    font-size: 15px;
+    max-width: 600px;
+    line-height: 2;
+    font-weight: normal;
+    opacity: 60%;
+}
+
+
+
+.hero-text h1{
+    margin-bottom: .5em;
+    font-size: 3rem;
+}
+
+.hero-text p{
+    opacity: 60%;
+    margin-bottom: .5em;
+}
+
+.hero-text .services-list{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.hero-text .services-list li{
+    list-style-type: none;
+    opacity: 60%;
+}
+
+.hero-bottom{
+    margin-bottom: 70px;
+    padding-top: 70px;
+}
+
+.mission{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.mission .mission-heading{
+    text-align: center;
+    width: 100%;
+}
+
+.mission .mission-heading h1{
+    font-size: 3rem;
+    margin-bottom: .5em;
+}
+
+@media screen and (max-width: 846px){
+    .about-hero .about-hero-wrapper .about-hero-top{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 846px){
+    .about-hero .about-hero-wrapper .about-hero-top{
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
+    .about-hero .about-hero-wrapper .about-hero-top .about-hero-img img{
+        width: 200px;
+    }
+
+    .about-hero{
+        margin-top: 2em;
+    }
+
+    .about-hero-text h1{
+        text-align: center;
+    }
+
+    .about-hero-text p{
+        padding: 1em;
+    }
+
+    .about-hero-text{
+        margin-right: 0em;
+    }
+}
+
+@media screen and (max-width: 936px){
+    .mission{
+        flex-direction: column-reverse;
+    }
+
+    .mission .mission-img img{
+        width: 100px;
+    }
+}

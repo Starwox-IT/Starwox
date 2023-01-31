@@ -1,0 +1,61 @@
+.contact{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+
+.contact .contact-wrapper .contact-heading h1{
+    font-size: 2.5rem;
+    margin-bottom: .3em;
+}
+
+.contact .contact-wrapper .contact-heading{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.lets{
+    color: var(--mainRed);
+}
+
+.contact .contact-wrapper .contact-main #form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.contact .contact-wrapper .contact-main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact .contact-wrapper .contact-main #form .contact-same{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact .contact-wrapper .contact-main #form .contact-same label{
+    font-weight: normal;
+}
+
+.contact .contact-wrapper .contact-main #form .contact-same input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.contact .contact-wrapper .contact-main #form .submit{
+    text-align: center;
+}
+
+.contact .contact-wrapper .contact-main #form .submit button{
+    padding: 1em 2.3em;
+    border-radius: 10px 5px;
+    background: #8B8282;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

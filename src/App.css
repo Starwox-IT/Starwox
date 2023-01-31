@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+:root {
+  --gray: #8B8282;
+  --mainRed: #EC1F2F;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html *, html *::before, html *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'inter';
+  src: url(fonts/Inter-Medium.otf) format('opentype');
+  font-weight: medium;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+@font-face {
+  font-family: 'inter';
+  src: url(fonts/Inter-Regular.otf) format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url(fonts/Inter-SemiBold.otf) format('opentype');
+  font-weight: bold;
+}
+
+.App{
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+  padding-top: 70px;
+  font-family: 'inter';
+}
+
+/* body{
+  position: fixed;
+} */
+
+
+.hero-bottom{
+  width: 95%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+
+.hero-bottom .portfolio-btn{
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 1em;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero-bottom .portfolio-btn p{
+  opacity: 0.8;
+}
+
+.main-red{
+  color: var(--mainRed);
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 702px){
+  .hero-bottom{
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
   }
-  to {
-    transform: rotate(360deg);
+  .hero-bottom .portfolio-btn{
+    align-self: center;
   }
 }
+

@@ -1,0 +1,310 @@
+.web-hero{
+    margin-top: 70px;
+    position: relative;
+}
+
+.pattern2{
+    position: absolute;
+    top: 2%;
+    z-index: 2;
+    right: -170px;
+    opacity: 60%;
+}
+
+.web-hero .web-hero-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.web-hero .web-hero-wrapper .hero-top{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+
+.web-hero .web-hero-wrapper .hero-top .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.web-hero .web-hero-wrapper .hero-bottom .hero-text p{
+    max-width: 600px;
+    opacity: 60%;
+    font-size: 15px;
+}
+
+.web-hero .web-hero-wrapper .hero-bottom .hero-text h1{
+    margin-bottom: .5em;
+}
+
+.web-hero .web-hero-wrapper .hero-top .hero-text .web-p-bold{
+    font-size: 19px;
+}
+
+.web-hero .web-hero-wrapper .hero-top .hero-text>:nth-child(3){
+    max-width: 420px;
+    opacity: 70%;
+    font-size: 15px;
+}
+
+.web-hero .web-hero-wrapper .hero-top .hero-text h1{
+    font-size: 3.5rem;
+}
+
+.web-hero .web-hero-wrapper .hero-bottom{
+    margin-bottom: 70px;
+    padding-top: 100px;
+}
+
+.web-doing-display{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    margin-bottom: 150px;
+}
+
+.Expertise h1{
+    margin-bottom: 100px;
+}
+
+.Expertise-main{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: space-between;
+    grid-gap: 2em;
+    margin-left: 50px;
+    
+}
+
+.Expertise-main .doings{
+    width: 100%;
+
+}
+
+.Expertise-main .doings .doings-wrapper{
+    width: 100%;
+}
+
+/* This will be for a certain viewport width */
+/* .Expertise-main>:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+} */
+
+.Expertise-main>:nth-child(3)>.arrow{
+    visibility: hidden;
+}
+
+.getting{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.getting .getting-text-h1{
+    margin-bottom: 70px;
+}
+
+.getting .getting-text-h1 h1{
+    margin-bottom: .5em;
+}
+
+.getting .getting-text p{
+    opacity: 61%;
+    font-size: 15px;
+}
+
+.getting .getting-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.getting .getting-main .getting-same .getting-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: .8em;
+    
+}
+
+.getting .getting-main>:nth-child(1)>.getting-text{
+    width: fit-content;
+}
+
+.getting .getting-main>:nth-child(2)>.getting-text{
+    width: fit-content;
+   margin-left: auto;
+}
+
+.getting .getting-main>:nth-child(1){
+    flex-basis: 45%;
+}
+.getting .getting-main>:nth-child(2){
+    flex-basis: 45%;
+}
+
+.getting .getting-main .getting-same .getting-text img{
+    width: 90px;
+}
+
+.getting .getting-main .getting-same .getting-text p{
+    max-width: 400px;
+}
+
+@media screen and (max-width: 880px){
+    .web-hero .web-hero-wrapper .hero-top .hero-text>:nth-child(3){
+        max-width: 100%;
+    }
+
+    .web-hero .web-hero-wrapper .hero-top{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1014px){
+    .web-hero .web-hero-wrapper  .hero-top img{
+        width: 300px;
+    }
+  
+    .hero{
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 746px){
+    .hero-top{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .web-hero{
+        margin-top: 20px;
+    }
+
+    .pattern2{
+        opacity: 100%;
+    }
+
+    .web-hero .web-hero-wrapper .hero-top .hero-text{
+        gap: 1em;
+    }
+
+    .web-hero .web-hero-wrapper .hero-top .hero-text h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 428px){
+    .web-hero .web-hero-wrapper  .hero-top img{
+        width: 80%;
+    }
+
+    .web-hero .web-hero-wrapper .hero-top .hero-text h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 928px){
+    .web-hero .web-hero-wrapper .hero-bottom .hero-text p{
+        max-width: 420px;
+    }
+}
+
+@media screen and (max-width: 702px){
+    .web-hero .web-hero-wrapper .hero-bottom .hero-text p{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 482px){
+    .web-doing-display{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    .doings-main{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width: 613px){
+    .Expertise h1{
+        text-align: center;
+        font-size: 1.6rem !important;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 613px){
+    .Expertise h1{
+        font-size: 1.5rem !important;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1127px){
+    .Expertise-main>:nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .Expertise-main .doings-main{
+        margin-bottom: 30px;
+    }
+
+    .Expertise-main .arrow{
+        display: none;
+    }
+
+    .Expertise-main{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 715px){
+    .Expertise-main{
+        width: 100%;
+        grid-template-columns: unset;
+    }
+}
+
+@media screen and (max-width: 591px){
+    .Expertise-main{
+        display: block;
+        width: 100%;
+    }
+
+    .Expertise-main .doings{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 532px){
+    .getting .getting-main > :nth-child(1){
+        flex-basis: 100%;
+    }
+
+    .getting .getting-main .getting-same .getting-text p{
+        max-width: 100%;
+    }
+
+    .getting .getting-main > :nth-child(2){
+        flex-basis: 100%;
+    }
+}
+
+
+@media screen and (max-width: 682px){
+    .web-hero .web-hero-wrapper .hero-bottom{
+        margin-bottom: 50px;
+    }
+}
+

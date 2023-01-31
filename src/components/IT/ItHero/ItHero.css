@@ -1,0 +1,130 @@
+.it-hero{
+    margin-top: 40px;
+    position: relative;
+}
+
+.it-hero .it-hero-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.it-hero .it-hero-wrapper .hero-top{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    gap: 2em;
+}
+
+.it-hero .it-hero-wrapper .hero-top img{
+    width: 500px;
+}
+
+.it-hero .it-hero-wrapper .hero-top .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.it-hero .it-hero-wrapper .hero-top .hero-text h1{
+    font-size: 3rem;
+}
+
+.it-hero .it-hero-wrapper .hero-top .hero-text>:nth-child(2){
+    font-size: 20px;
+    max-width: 400px;
+}
+
+.it-hero .it-hero-wrapper .hero-top .hero-text>:nth-child(3){
+    max-width: 570px;
+    opacity: 70%;
+    font-size: 15px;
+}
+
+.it-hero .it-hero-wrapper .hero-bottom{
+    margin-bottom: 70px;
+    padding-top: 100px;
+}
+
+.it-hero .it-hero-wrapper .hero-bottom .hero-text p{
+    max-width: 590px;
+    opacity: 60%;
+    font-size: 15px;
+}
+
+.it-hero .it-hero-wrapper .hero-bottom .hero-text h1{
+    margin-bottom: .5em;
+}
+
+.it-doing-display{
+    display: grid;
+    gap: 1em;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 950px){
+    .it-hero .it-hero-wrapper .hero-top{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 854px){
+    .it-hero .it-hero-wrapper .hero-top{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .it-hero .it-hero-wrapper .hero-top img{
+        width: 400px;
+    }
+
+    .it-hero .it-hero-wrapper .hero-top .hero-text{
+        gap: 1em;
+    }
+
+    .it-hero .it-hero-wrapper .hero-top .hero-text>:nth-child(2),
+    .it-hero .it-hero-wrapper .hero-top .hero-text>:nth-child(3){
+        max-width: 100%;
+    }
+
+    .it-hero{
+        margin-top: 40px;
+    }
+   
+}
+
+@media screen and (max-width: 514px){
+    .it-hero .it-hero-wrapper .hero-top .hero-text h1{
+        font-size: 2.5rem;
+    }
+
+    .it-hero .it-hero-wrapper .hero-top img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 912px){
+    .hero-bottom{
+      flex-direction: column;
+      text-align: center;
+      gap: 2em;
+    }
+    .hero-bottom .portfolio-btn{
+      align-self: center !important;
+    }
+}
+  
+@media screen and (max-width: 970px){
+    .it-doing-display{
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .it-doing-display{
+        display: block;
+    }
+}
+

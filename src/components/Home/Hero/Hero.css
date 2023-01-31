@@ -1,0 +1,127 @@
+.hero{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero .hero-wrapper{
+    margin-bottom: 70px;
+}
+
+.hero .hero-wrapper .hero-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.hero .hero-wrapper .hero-top .hero-text h1{
+    font-size: 3.5rem;
+    margin-bottom: 23px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.hero .hero-wrapper .hero-top img{
+    align-self: flex-start;
+}
+
+.hero .hero-wrapper .hero-top .hero-text h1 .effi{
+    color: var(--mainRed);
+}
+
+.hero .hero-wrapper .hero-top .hero-text p{
+    max-width: 500px;
+    font-weight: normal;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.hero .hero-wrapper .hero-bottom{
+    margin-bottom: 100px;
+    padding-top: 70px;
+}
+
+.hero .hero-wrapper .hero-bottom .hero-text h1{
+    font-size: 2.5rem;
+    margin-bottom: 23px;
+    font-weight: bold;
+}
+
+.hero .hero-wrapper .hero-bottom .hero-text h1 .we{
+    color: var(--mainRed);
+}
+
+.hero .hero-wrapper .hero-bottom .hero-text p{
+    max-width: 400px;
+    opacity: 0.7;
+}
+
+.doings-display{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.doings-display .doings .doings-wrapper{
+    padding: 1em;
+}
+
+@media screen and (max-width: 1014px){
+    .hero-top img{
+        width: 400px;
+    }
+  
+    .hero{
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .hero-top{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+  
+    .hero .hero-wrapper .hero-top .hero-text h1 br{
+      display: none;
+    }
+  
+    .hero .hero-wrapper .hero-top img{
+      align-self: center;
+    }
+  
+    .hero .hero-wrapper .hero-top .hero-text{
+      max-width: 100%;
+    }
+  
+    .hero .hero-wrapper .hero-top .hero-text p{
+      max-width: 100%;
+    }
+  
+    .hero .hero-wrapper .hero-top .hero-text h1{
+      font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 698px){
+    .hero .hero-wrapper .hero-top .hero-text h1{
+        font-size: 3rem;
+    }
+
+    .hero .hero-wrapper .hero-top img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 422px){
+    .hero .hero-wrapper .hero-top .hero-text h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1127px){
+    .doings-display .doings-main{
+        margin-bottom: 80px;
+    }
+}

@@ -1,0 +1,79 @@
+.testimonial{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.review-red{
+    color: var(--mainRed);
+}
+
+.review-heading-text p{
+    max-width: 500px;
+    opacity: 0.7;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, max-content);
+    justify-items: center;
+    justify-content: center;
+    width: 95%;
+    margin-bottom: 2em;
+}
+
+.reviews .review-main{
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+.reviews .review-main .review-img{
+    background-color: burlywood;
+    height: max-content;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.reviews .review-main .review-img .review-text{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background-color: #433F3F;
+    width: 100%;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+.reviews .review-main .review-img .review-text .name{
+    color: white;
+    font-weight: medium;
+    font-size: 15px;
+    margin-bottom: .5em;
+}
+
+.reviews .review-main .review-img .review-text .role{
+    font-size: 14px;
+    font-weight: normal;
+    color: #DC6B6B;
+    margin-bottom: .5em;
+}
+
+.reviews .review-main .review-img .review-text .company{
+    color: white;
+    font-size: 12px;
+}
+
+.reviews .review-main .review-img img{
+    width: 100%;
+}
+
+.reviews .review-main .review-text-main{
+    text-align: center;
+}
+
+.reviews .review-main .review-text-main p{
+    font-size: 12px;
+    opacity: 60%;
+}
