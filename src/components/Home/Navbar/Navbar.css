@@ -5,6 +5,7 @@
     top: 0;
     z-index: 100;
     box-shadow: 0px 1px 20px 0px #d6d5d5;
+    height: 70px;
 }
 
 .navbar .navbar-wrapper{
@@ -67,7 +68,7 @@
     }
     
 
-    #hamburger .nav-toggle> .bar{
+    #hamburger  .bar{
         position: relative;
         width: 32px;
         height: 2px;
@@ -76,7 +77,7 @@
         transition: all 0.45s ease-in-out;
     }
 
-    #hamburger .nav-toggle> .bar::before, #hamburger .nav-toggle> .bar::after{
+    #hamburger .bar::before, #hamburger .bar::after{
         content: "";
         position: absolute;
         height: 2px;
@@ -86,13 +87,13 @@
         transition: all .45s ease-in-out;
     }
 
-    #hamburger .nav-toggle>.bar::before{
+    #hamburger .bar::before{
         width: 25px;
         transform: translateY(-8px);
         right: 0;
     }
 
-    #hamburger .nav-toggle>.bar::after{
+    #hamburger .bar::after{
         width: 32px;
         transform: translateY(8px);
     }

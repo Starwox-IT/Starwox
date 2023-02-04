@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="hero-top">
                 <div className="hero-text">
                     <h1>Your <span className="effi">efficient</span> team <br/> beyond walls</h1>
-                    <p>We make business run smoothly by handling your digital processes smoothly with team work and strategic planning </p>
+                    <p>We make business run smoothly by handling your digital processes smoothly with team work and strategic planning. </p>
                 </div>
 
                 <img src={illu1} alt="" />

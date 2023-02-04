@@ -36,7 +36,7 @@ const Navbar = () => {
             <ul className="navbar-nav">
               <Link to='/'>Home</Link>
 
-              <li><a href="#services">Services</a></li>
+              <li><a href="/#services">Services</a></li>
                 
               <Link to='/about'>About us</Link>
                 
@@ -45,8 +45,8 @@ const Navbar = () => {
           </div>
 
           <a href={() => false} id='hamburger'  onClick={Open}>
-            <div className={`nav-toggle ${isOpen && "open"}`} >
-                <div className="bar"></div>
+            <div>
+                <div className={`bar nav-toggle  ${isOpen && "open"}`}></div>
             </div>
           </a>
         </div>

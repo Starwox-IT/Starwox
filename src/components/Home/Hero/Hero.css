@@ -12,6 +12,14 @@
     justify-content: space-between;
     align-items: center;
     gap: 1em;
+    height: 84vh;
+}
+
+.hero .hero-wrapper .hero-top .hero-text{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hero .hero-wrapper .hero-top .hero-text h1{
@@ -22,7 +30,7 @@
 }
 
 .hero .hero-wrapper .hero-top img{
-    align-self: flex-start;
+    width: 550px;
 }
 
 .hero .hero-wrapper .hero-top .hero-text h1 .effi{
@@ -67,9 +75,9 @@
     padding: 1em;
 }
 
-@media screen and (max-width: 1014px){
+@media screen and (max-width: 1000px){
     .hero-top img{
-        width: 400px;
+        width: 400px !important;
     }
   
     .hero{
@@ -77,10 +85,17 @@
     }
 }
 
+@media screen and (max-width: 490px){
+    .hero .hero-wrapper .hero-top img{
+        width: 100% !important;
+      }
+}
+
 @media screen and (max-width: 880px){
     .hero-top{
         flex-direction: column-reverse;
         text-align: center;
+        justify-content: center !important;
     }
   
     .hero .hero-wrapper .hero-top .hero-text h1 br{
@@ -93,6 +108,7 @@
   
     .hero .hero-wrapper .hero-top .hero-text{
       max-width: 100%;
+      gap: 0;
     }
   
     .hero .hero-wrapper .hero-top .hero-text p{
@@ -110,13 +126,19 @@
     }
 
     .hero .hero-wrapper .hero-top img{
-        width: 70%;
+        width: 300px !important;
     }
 }
 
-@media screen and (max-width: 422px){
+@media screen and (max-width: 490px){
+    .hero .hero-wrapper .hero-top img{
+        width: 100% !important;
+      }
+}
+
+@media screen and (max-width: 481px){
     .hero .hero-wrapper .hero-top .hero-text h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 

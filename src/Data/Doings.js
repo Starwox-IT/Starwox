@@ -44,7 +44,8 @@ export  const doingsData = [
         title: 'Cyber security',
         description: 'The safety and privacy of your information is important, having a private network that helps you control what leaves and what stays, allowing you reduce risks ad also facilitate remote work.',
         arrow: arrow,
-        see: "see more"
+        see: "see more",
+        link: ""
     },
 
     {
@@ -53,7 +54,8 @@ export  const doingsData = [
         title: 'Strategic planning',
         description: 'We take time to determine the best way to execute your project to ensure that you get excellent service',
         arrow: arrow,
-        see: "see more"
+        see: "see more",
+        link: ""
     },
 
     {
@@ -62,6 +64,7 @@ export  const doingsData = [
         title: 'Custom solutions',
         description: 'Whether you need just one or a mix of our services, we can work out a suitable arrangement for you.',
         arrow: arrow,
-        see: "see more"
+        see: "see more",
+        link: ""
     },
 ]
