@@ -169,10 +169,6 @@
     .web-hero .web-hero-wrapper  .hero-top img{
         width: 300px;
     }
-  
-    .hero{
-        margin-top: 2em;
-    }
 }
 
 @media screen and (max-width: 746px){

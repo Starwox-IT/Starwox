@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import Logo from 'assets/logo.png';
+import { HashLink } from "react-router-hash-link"
 // import $ from 'jquery'
 
 const Navbar = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
             <ul className="navbar-nav">
               <Link to='/'>Home</Link>
 
-              <li><a href="/#services">Services</a></li>
+              <HashLink to="/#services">Services</HashLink>
                 
               <Link to='/about'>About us</Link>
                 

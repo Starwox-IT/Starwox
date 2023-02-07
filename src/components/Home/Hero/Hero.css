@@ -15,6 +15,8 @@
     height: 84vh;
 }
 
+
+
 .hero .hero-wrapper .hero-top .hero-text{
     display: flex;
     gap: 2em;
@@ -23,14 +25,14 @@
 }
 
 .hero .hero-wrapper .hero-top .hero-text h1{
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 23px;
     font-weight: bold;
-    width: 100%;
+    
 }
 
 .hero .hero-wrapper .hero-top img{
-    width: 550px;
+    width: 500px;
 }
 
 .hero .hero-wrapper .hero-top .hero-text h1 .effi{
@@ -75,13 +77,15 @@
     padding: 1em;
 }
 
+@media screen and (max-width: 1047px){
+    .hero .hero-wrapper .hero-top .hero-text h1{
+        font-size: 3rem !important;
+    }
+}
+
 @media screen and (max-width: 1000px){
     .hero-top img{
         width: 400px !important;
-    }
-  
-    .hero{
-        margin-top: 2em;
     }
 }
 
@@ -96,15 +100,18 @@
         flex-direction: column-reverse;
         text-align: center;
         justify-content: center !important;
+        justify-self: flex-start;
+        margin-top: auto;
+        gap: 2em !important;
+        height: 80vh !important;
     }
+
+
   
     .hero .hero-wrapper .hero-top .hero-text h1 br{
       display: none;
     }
-  
-    .hero .hero-wrapper .hero-top img{
-      align-self: center;
-    }
+
   
     .hero .hero-wrapper .hero-top .hero-text{
       max-width: 100%;
@@ -115,14 +122,12 @@
       max-width: 100%;
     }
   
-    .hero .hero-wrapper .hero-top .hero-text h1{
-      font-size: 3rem;
-    }
+   
 }
 
 @media screen and (max-width: 698px){
     .hero .hero-wrapper .hero-top .hero-text h1{
-        font-size: 3rem;
+        font-size: 2.5rem !important;
     }
 
     .hero .hero-wrapper .hero-top img{
