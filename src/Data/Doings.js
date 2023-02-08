@@ -15,7 +15,8 @@ export  const doingsData = [
         description: 'We can design eye catching, functional and responsive websites to complement your brand image and enhance your user’s navigation. We can build from a pre-existing template or from scratch.',
         arrow: arrow,
         see: "see more",
-        link:"web"
+        link:"web",
+        class: "home-card1"
     },
 
     {
@@ -25,7 +26,8 @@ export  const doingsData = [
         description: 'Our data scientists work together to give you a full view of the state of your business. We organise your data, visualizing it to give a full view of your business, helping you understand your cutomers better and overall aiding decision making.',
         arrow: arrow,
         see: "see more",
-        link: "data"
+        link: "data",
+        class: "home-card1"
     },
 
     {
@@ -35,7 +37,8 @@ export  const doingsData = [
         description: 'Your clients need support to get the best of your of your products. Our team of IT support specialists are profesionals at helping customers at get the proper help that need they need in the kindest way.  ',
         arrow: arrow,
         see: "see more",
-        link: "IT"
+        link: "IT",
+        class: "home-card1"
     },
 
     {
@@ -45,7 +48,8 @@ export  const doingsData = [
         description: 'The safety and privacy of your information is important, having a private network that helps you control what leaves and what stays, allowing you reduce risks ad also facilitate remote work.',
         arrow: arrow,
         see: "see more",
-        link: ""
+        link: "",
+        class: "home-card2"
     },
 
     {
@@ -55,7 +59,8 @@ export  const doingsData = [
         description: 'We take time to determine the best way to execute your project to ensure that you get excellent service',
         arrow: arrow,
         see: "see more",
-        link: ""
+        link: "",
+        class: "home-card2"
     },
 
     {
@@ -65,6 +70,7 @@ export  const doingsData = [
         description: 'Whether you need just one or a mix of our services, we can work out a suitable arrangement for you.',
         arrow: arrow,
         see: "see more",
-        link: ""
+        link: "",
+        class: "home-card2"
     },
 ]

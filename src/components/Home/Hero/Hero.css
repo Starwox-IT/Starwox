@@ -31,7 +31,6 @@
     font-size: 4rem;
     margin-bottom: 23px;
     font-weight: bold;
-    
 }
 
 .hero .hero-wrapper .hero-top img{
@@ -54,6 +53,17 @@
 .hero .hero-wrapper .hero-bottom{
     margin-bottom: 100px;
     padding-top: 70px;
+}
+
+.hero .hero-wrapper .hero-bottom .hero-text{
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px)
+}
+
+.hero .hero-wrapper .hero-bottom .portfolio-btn{
+    opacity: 0;
+    transform: translateY(50px)
 }
 
 .hero .hero-wrapper .hero-bottom .hero-text h1{
@@ -81,6 +91,14 @@
 
 .doings-display .doings .doings-wrapper{
     padding: 1em;
+}
+
+.home-card1{
+    transform: translateY(100px)
+}
+
+.home-card2{
+    transform: translateY(100px)
 }
 
 @media screen and (max-width: 1047px){

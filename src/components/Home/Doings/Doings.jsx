@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom'
 
 
 const Doings = (props) => {
+  
+
+
   return (
-    <div className="doings-main">
+    <div className={`doings-main ${props.class}`}>
       <div className="doings">
         <div className="doings-wrapper home-doings">
             <img src={props.image} alt="" />
