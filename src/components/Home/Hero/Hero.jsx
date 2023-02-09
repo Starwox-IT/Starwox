@@ -6,6 +6,7 @@ import rightarrow from 'assets/right-arrow.png';
 import { doingsData } from 'Data/Doings';
 import Doings from '../Doings/Doings';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
@@ -20,12 +21,7 @@ const Hero = () => {
             }
         });
 
-        // This is the timeline for services section
-        let tlthree = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.doings-main',
-            }
-        })
+        
 
         //This is the annimation for hero section
         tl.to('.hero-img', {opacity:1, 'transform': 'scale(1)'})
@@ -37,12 +33,52 @@ const Hero = () => {
             .to('.portfolio-btn', {opacity: 1, y: 0})
 
         //This is the annimation for services section
-        tlthree.to('.home-card1', {y:0, stagger:.2})
+        // tlthree.to('.home-card1', {y:0, stagger:.2})
 
-        gsap.to('.home-card2', {y:0, stagger:.2,
-            scrollTrigger:{
-                trigger:".home-card2",
-              }
+        // This is the timeline for services section
+        // let tlthree = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: '.doings-main',
+        //     }
+        // })
+
+        // gsap.to('.doings-main', {y:0,
+        //     scrollTrigger:{
+                
+        //         trigger:".doings-main",
+        //       }
+        // })
+
+        let mm = gsap.matchMedia();
+        //This is the service page for screen size of 999px and below
+        mm.add("(max-width: 1017px)", () => {
+            const doings = gsap.utils.toArray(".doings-main");
+            doings.forEach(doing => {
+                gsap.to(doing, {
+                    y:0,
+                    stagger: .2,
+                    duration: 1,
+                    scrollTrigger:{
+                        trigger:doing,
+                    }
+                })
+            })
+        })
+
+        //This is the service page for screen size of 1000px and above
+        mm.add("(min-width: 1018px)", () => {
+            let tlthree = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.doings-main',
+                }
+            })
+            tlthree.to('.home-card1', {y:0, stagger:.2})
+
+            gsap.to('.home-card2', {y:0, stagger:.2,
+                scrollTrigger:{
+                    trigger:".home-card2",
+                  }
+            })
         })
     }, [])
     
