@@ -83,7 +83,7 @@
 }
 
 .doings-display{
-    width: 95%;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
