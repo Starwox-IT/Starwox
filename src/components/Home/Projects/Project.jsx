@@ -32,6 +32,7 @@ const Project = () => {
                 y:0,
                 'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',
                 duration: 1,
+                
                 scrollTrigger:{
                     trigger:projectName,
                     start: "-70px 100%",

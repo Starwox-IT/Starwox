@@ -1,5 +1,5 @@
-import {gsap, Power4 } from 'gsap';
 import React, { useEffect } from "react";
+import {gsap, Power4 } from 'gsap';
 import './Hero.css'
 import illu1 from 'assets/illu 1.png';
 import rightarrow from 'assets/right-arrow.png';
@@ -32,6 +32,8 @@ const Hero = () => {
         tltwo.to('.hero-bottom-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0',})
             .to('.portfolio-btn-home1', {opacity: 1, y: 0})
 
+
+
         let mm = gsap.matchMedia();
         //This is the service page for screen size of 999px and below
         mm.add("(max-width: 1017px)", () => {
@@ -53,9 +55,9 @@ const Hero = () => {
                     trigger: '.doings-main',
                 }
             })
-            tlthree.to('.home-card1', {y:0, stagger:.2})
+            tlthree.to('.home-card1', {y:0, stagger:.2, ease:"back", delay:.5})
 
-            gsap.to('.home-card2', {y:0, stagger:.2,
+            gsap.to('.home-card2', {y:0, stagger:.2,ease:"back",
                 scrollTrigger:{
                     trigger:".home-card2",
                   }
@@ -76,11 +78,6 @@ const Hero = () => {
             />
         )
     })
-    
-    // let tl = new TimelineLite({ delay: 0.3})
-    // useEffect(() => {
-    //     tl.from('.hero-text', {y:15, opacity: 0, ease:Power3.easeOut, delay:0.2}, 'start')
-    // }, [])
 
   return (
     <div className="hero">

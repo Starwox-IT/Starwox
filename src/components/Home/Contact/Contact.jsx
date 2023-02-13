@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import {gsap} from 'gsap';
 import './Contact.css'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+
+    useEffect(() => {
+        gsap.to('.contact-main', {y:0, opacity: 1 ,ease:"back", duration:1,
+            scrollTrigger:{
+                trigger:".contact-main",
+            }
+        })
+    })
+
   return (
     <div className="contact">
         <div className="contact-wrapper">

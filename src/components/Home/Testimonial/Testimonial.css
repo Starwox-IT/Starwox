@@ -7,9 +7,20 @@
     color: var(--mainRed);
 }
 
+.review-heading-text{
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px)
+}
+
 .review-heading-text p{
     max-width: 500px;
     opacity: 0.7;
+}
+
+.review-portfolio-btn{
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 .reviews{
@@ -41,7 +52,7 @@
     position: relative;
     width: max-content;
     margin-bottom: 2em;
-    
+    transform: translateY(100px)
     
 }
 
@@ -84,6 +95,8 @@
 
 .reviews .review-main .review-text-main{
     text-align: center;
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    transform: translateY(30px);
 }
 
 .reviews .review-main .review-text-main p{

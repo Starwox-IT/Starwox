@@ -1,9 +1,61 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import {gsap, Power4 } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Testimonial.css'
 import rightarrow from 'assets/right-arrow.png';
 import { reviewData } from './../../../Data/Review';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Testimonial = () => {
+  useEffect(() => {
+    let tlthree = gsap.timeline({
+      scrollTrigger: {
+          trigger: '.review-heading-text',
+      }
+    });
+    tlthree.to('.review-heading-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0',})
+          .to('.review-portfolio-btn', {opacity: 1, y: 0})
+
+    
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 1067px)", () => {
+      gsap.to('.review-img', {y:0, stagger:.2,ease:"back",
+        scrollTrigger:{
+          trigger:".review-img",
+        }
+      })
+    })
+
+    mm.add("(max-width: 1066px)", () => {
+      const reviewImgs = gsap.utils.toArray(".review-img");
+      reviewImgs.forEach(reviewImg => {
+        gsap.to(reviewImg, {
+          y:0,
+          scrollTrigger:{
+            trigger:reviewImg,
+          }
+        })
+      })
+    })
+
+    const reviewTexts = gsap.utils.toArray(".review-text-main");
+      reviewTexts.forEach(reviewText => {
+        gsap.to(reviewText, {
+          ease: Power4.easeInOut,
+          y:0,
+          'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',
+          duration: 1,
+          
+          scrollTrigger:{
+            trigger:reviewText,
+            start: "-70px 100%",
+          }
+        })
+    })
+    
+  })
+
   return (
     <div className="testimonial">
       <div className="testimonial-wrapper">
@@ -13,7 +65,7 @@ const Testimonial = () => {
               <p>Here are some reviews and testimonials from our trusted clients concerning our services at starwox </p>
           </div>
 
-          <div className="portfolio-btn">
+          <div className="portfolio-btn review-portfolio-btn">
               <p>see our portfolio</p>
               <img src={rightarrow} alt="" />
           </div>
