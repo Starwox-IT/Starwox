@@ -48,6 +48,9 @@ html *, html *::before, html *::after {
   justify-content: space-between;
 }
 
+.hero-bottom .portfolio-btn p{
+  opacity: 0.8;
+}
 
 .hero-bottom .portfolio-btn{
   display: flex;
@@ -57,9 +60,7 @@ html *, html *::before, html *::after {
   cursor: pointer;
 }
 
-.hero-bottom .portfolio-btn p{
-  opacity: 0.8;
-}
+
 
 .main-red{
   color: var(--mainRed);

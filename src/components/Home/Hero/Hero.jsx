@@ -30,24 +30,7 @@ const Hero = () => {
 
         //This is the annimation for what we do section    
         tltwo.to('.hero-bottom-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0',})
-            .to('.portfolio-btn', {opacity: 1, y: 0})
-
-        //This is the annimation for services section
-        // tlthree.to('.home-card1', {y:0, stagger:.2})
-
-        // This is the timeline for services section
-        // let tlthree = gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: '.doings-main',
-        //     }
-        // })
-
-        // gsap.to('.doings-main', {y:0,
-        //     scrollTrigger:{
-                
-        //         trigger:".doings-main",
-        //       }
-        // })
+            .to('.portfolio-btn-home1', {opacity: 1, y: 0})
 
         let mm = gsap.matchMedia();
         //This is the service page for screen size of 999px and below
@@ -56,8 +39,6 @@ const Hero = () => {
             doings.forEach(doing => {
                 gsap.to(doing, {
                     y:0,
-                    stagger: .2,
-                    duration: 1,
                     scrollTrigger:{
                         trigger:doing,
                     }
@@ -119,7 +100,7 @@ const Hero = () => {
                     <p>We give your business unique value and the authority to stand out among competitors with:</p>
                 </div>
 
-                <div className="portfolio-btn">
+                <div className="portfolio-btn portfolio-btn-home1">
                     <p>see our portfolio</p>
                     <img src={rightarrow} alt="" />
                 </div>
