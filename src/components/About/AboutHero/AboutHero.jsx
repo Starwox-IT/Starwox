@@ -1,10 +1,40 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import {gsap, Power4 } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './AboutHero.css'
 import personality from 'assets/personality.png'
 import rightarrow from 'assets/right-arrow.png';
 import goal from 'assets/goal.png'
 
+gsap.registerPlugin(ScrollTrigger);
+
 const AboutHero = () => {
+    useEffect(() => {
+        //This is the annimation for about section
+        let tl = gsap.timeline({defaults: {ease: Power4.easeInOut, duration:2}})
+        tl.to('.about-hero-img', {opacity:1, 'transform': 'scale(1)'})
+            .to('.about-hero-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)', opacity:1, y:0, duration:2.2}, '-=2'
+            )
+
+        let tltwo = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.about-bottom-hero-text',
+            }
+        });
+        tltwo.to('.about-bottom-hero-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0'})
+            .to('.portfolio-btn-about', {opacity: 1, y: 0})
+
+        let tlmission = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.mission-heading',
+                start: 'top 100%'
+            }
+        });
+
+        tlmission.to('.mission-heading', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1, y: '0'})
+            .to('.mission-img', {opacity: 1, x: 0, ease: "back"})
+    })
+
   return (
     <div className="about-hero">
         <div className="about-hero-wrapper">
@@ -19,7 +49,7 @@ const AboutHero = () => {
             </div>
 
             <div className="hero-bottom" id='services'>
-                <div className="hero-text">
+                <div className="hero-text about-bottom-hero-text">
                     <h1>Our <span className="main-red">services</span></h1>
                     <p>We provide the following services:</p>
                     <ul className="services-list">
@@ -30,7 +60,7 @@ const AboutHero = () => {
                     </ul>
                 </div>
 
-                <div className="portfolio-btn">
+                <div className="portfolio-btn portfolio-btn-about">
                     <p>see our portfolio</p>
                     <img src={rightarrow} alt="" />
                 </div>

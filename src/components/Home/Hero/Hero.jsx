@@ -25,11 +25,11 @@ const Hero = () => {
 
         //This is the annimation for hero section
         tl.to('.hero-img', {opacity:1, 'transform': 'scale(1)'})
-            .to('.main-hero-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)', opacity:1, y:0, duration:2.2}, '-=2'
+            .to('.main-hero-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)', opacity:1, y:0,  duration:2.2}, '-=2'
             )
 
         //This is the annimation for what we do section    
-        tltwo.to('.hero-bottom-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0',})
+        tltwo.to('.hero-bottom-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0'})
             .to('.portfolio-btn-home1', {opacity: 1, y: 0})
 
 
@@ -55,7 +55,7 @@ const Hero = () => {
                     trigger: '.doings-main',
                 }
             })
-            tlthree.to('.home-card1', {y:0, stagger:.2, ease:"back", delay:.5})
+            tlthree.to('.home-card1', {y:0, stagger:.2, ease:"back"})
 
             gsap.to('.home-card2', {y:0, stagger:.2,ease:"back",
                 scrollTrigger:{

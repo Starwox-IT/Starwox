@@ -49,7 +49,7 @@ const Testimonial = () => {
           
           scrollTrigger:{
             trigger:reviewText,
-            start: "-70px 100%",
+            start: "top 100%",
           }
         })
     })

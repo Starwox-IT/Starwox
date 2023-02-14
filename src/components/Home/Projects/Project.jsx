@@ -35,7 +35,7 @@ const Project = () => {
                 
                 scrollTrigger:{
                     trigger:projectName,
-                    start: "-70px 100%",
+                    start: "top 100%",
                     
                 }
             })

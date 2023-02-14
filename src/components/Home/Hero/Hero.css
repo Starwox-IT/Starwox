@@ -24,7 +24,7 @@
     justify-content: space-between;
     clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
     opacity: 0;
-    transform: translateY(100px)
+    transform: translateY(100px);
 }
 
 .hero .hero-wrapper .hero-top .hero-text h1{
@@ -58,7 +58,7 @@
 .hero .hero-wrapper .hero-bottom .hero-text{
     clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
     opacity: 0;
-    transform: translateY(100px)
+    transform: translateY(100px);
 }
 
 .hero .hero-wrapper .hero-bottom .portfolio-btn-home1{

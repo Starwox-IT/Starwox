@@ -1,7 +1,6 @@
 .about-hero{
     width: 90%;
     margin: 0 auto;
-    margin-top: 70px;
 }
 
 .about-hero .about-hero-wrapper .about-hero-top{
@@ -9,10 +8,19 @@
     width: 90%;
     justify-content: space-between;
     align-items: center;
+    min-height: 84vh;
 }
 
 .about-hero-text{
     margin-right: 1em;
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px)
+}
+
+.about-hero .about-hero-wrapper .about-hero-top .about-hero-img{
+    opacity: 0;
+    transform: scale(.5);
 }
 
 .about-hero-text h1{
@@ -37,6 +45,17 @@
 .hero-text h1{
     margin-bottom: .5em;
     font-size: 3rem;
+}
+
+.about-bottom-hero-text{
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.portfolio-btn-about{
+    opacity: 0;
+    transform: translateY(100px)
 }
 
 .hero-text p{
@@ -69,6 +88,14 @@
 .mission .mission-heading{
     text-align: center;
     width: 100%;
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.mission .mission-img{
+    transform: translateX(270px);
+    opacity: 0;
 }
 
 .mission .mission-heading h1{
