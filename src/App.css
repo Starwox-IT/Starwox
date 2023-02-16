@@ -32,7 +32,7 @@ html *, html *::before, html *::after {
   margin: 0 auto;
   background-color: white;
   overflow: hidden;
-  padding-top: 70px;
+  padding-top: 100px;
   font-family: 'inter';
 }
 

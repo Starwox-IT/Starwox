@@ -94,11 +94,13 @@
 }
 
 .home-card1{
-    transform: translateY(100px)
+    transform: translateY(100px);
+    opacity: 0;
 }
 
 .home-card2{
-    transform: translateY(100px)
+    transform: translateY(100px);
+    opacity: 0;
 }
 
 @media screen and (max-width: 1047px){

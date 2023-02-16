@@ -10,7 +10,7 @@
 }
 
 .doings-wrapper{
-    background: rgba(175, 171, 171, 0.09);
+    background: rgba(175, 171, 171, 25%);
     width: 100%;
     height: 100%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);

@@ -41,6 +41,10 @@
     font-weight: 400;
 }
 
+.navbar .navbar-wrapper .nav-items ul a:hover{
+    color: #EC1F2F;
+}
+
 .navbar .navbar-wrapper .nav-items ul a{
     text-decoration: none;
     color: black;

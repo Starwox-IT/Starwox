@@ -29,7 +29,7 @@ const Hero = () => {
             )
 
         //This is the annimation for what we do section    
-        tltwo.to('.hero-bottom-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0'})
+        tltwo.to('.hero-bottom-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0', delay: .5})
             .to('.portfolio-btn-home1', {opacity: 1, y: 0})
 
 
@@ -53,14 +53,16 @@ const Hero = () => {
             let tlthree = gsap.timeline({
                 scrollTrigger: {
                     trigger: '.doings-main',
+                    start:"top 80%"
                 }
             })
-            tlthree.to('.home-card1', {y:0, stagger:.2, ease:"back"})
+            tlthree.to('.home-card1', {y:0, stagger:.2, ease:"back", opacity: 1, delay: 1})
 
-            gsap.to('.home-card2', {y:0, stagger:.2,ease:"back",
+            gsap.to('.home-card2', {y:0, stagger:.2,ease:"back", opacity: 1,
                 scrollTrigger:{
                     trigger:".home-card2",
-                  }
+                    start:"top 80%"
+                }
             })
         })
     }, [])

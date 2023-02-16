@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 
 
 const Doings = (props) => {
-  
-
 
   return (
     <div className={`doings-main ${props.class}`}>

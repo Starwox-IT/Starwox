@@ -11,6 +11,7 @@ export  const expertData = [
         title: 'E-commerce',
         description: 'We are focused on bringing value to our customers and on helping them succeed in the digital market place',
         arrow: arrow,
+        class: "expert-same"
     },
 
     {
@@ -19,6 +20,7 @@ export  const expertData = [
         title: 'Fin-tech',
         description: 'We are focused on bringing value to our cutomers and on helping them succeed in market place',
         arrow: arrow,
+        class: "expert-same"
     },
 
     {
@@ -27,5 +29,6 @@ export  const expertData = [
         title: 'HR',
         description: 'We are focused on bringing value to our cutomers and on helping them succeed in market place',
         arrow: arrow,
+        class: "expert-same"
     },
 ]

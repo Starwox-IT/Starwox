@@ -1,5 +1,4 @@
 .data-hero{
-    margin-top: 70px;
     position: relative;
 }
 
@@ -14,6 +13,7 @@
     width: 90%;
     align-items: center;
     gap: 2em;
+    min-height: 84vh;
 }
 
 .data-hero .data-hero-wrapper .hero-top .hero-text{
