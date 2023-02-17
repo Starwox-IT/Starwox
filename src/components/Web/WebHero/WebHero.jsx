@@ -70,6 +70,7 @@ const WebHero = () => {
       gsap.to('.expert-same', {y:0, stagger:.2, opacity: 1, delay: .5,
           scrollTrigger:{
               trigger:".expert-same",
+              start: "top 80%"
           }
       })
     })
@@ -81,11 +82,44 @@ const WebHero = () => {
               y:0,
               opacity: 1,
               scrollTrigger:{
-                  trigger:expert,
+                trigger:expert,
+                start: "top 80%"
               }
           })
       })
     })
+
+    //This is for portfolio button
+    gsap.to(".ready-custom-portfolio-btn", {
+      y:0,
+      opacity: 1,
+      delay:.8,
+      scrollTrigger:{
+        trigger:".ready-custom-portfolio-btn",
+      }
+    })
+
+    //This is the section for what you are getting section
+    const gettingImgs = gsap.utils.toArray(".getting-img");
+    gettingImgs.forEach(gettingImg => {
+      gsap.to(gettingImg, {y:0 , opacity: 1, delay: .5,
+        scrollTrigger:{
+          trigger: gettingImg,
+          start:"top 80%"
+        }
+      })
+    })
+
+    const gettingTxts = gsap.utils.toArray(".getting-text-main");
+    gettingTxts.forEach(gettingTxt => {
+      gsap.to(gettingTxt, {y:0 , opacity: 1, delay: .5,
+        scrollTrigger:{
+          trigger: gettingTxt,
+          start:"top 70%"
+        }
+      })
+    })
+    
   })
 
   const webDoings = webDoingsData.map(webDoing => {
@@ -155,14 +189,14 @@ const WebHero = () => {
               <p>If you want to implement a ready-made web template, or you want your website built from scratch, tailored to your specific needs, we are capable of giving you what you want, and how you want it. </p>
             </div>
 
-            <div className="portfolio-btn">
+            <div className="portfolio-btn ready-custom-portfolio-btn">
               <p>see our portfolio</p>
               <img src={rightarrow} alt="" />
             </div>
           </div>
 
           <div className="getting">
-            <div className="getting-text-h1">
+            <div className="getting-text-h1 web-doings-text">
               <h1>What you are <span className="main-red">getting</span></h1>
               <p>Everyday we work hard to make the lives of our clients more progressive and productive</p>
             </div>
@@ -170,25 +204,32 @@ const WebHero = () => {
             <div className="getting-main">
               <div className="getting-same">
                 <div className="getting-text">
-                  <img src={team} alt="" />
-                  <h3>Experienced Team</h3>
-                  <p>Our talents are trained developers, designers and managers with 5+ years of active experience who have seasoned understanding of trends and product delivery across various sectors</p>
+                  <img src={team} alt="" className="getting-img"/>
+                  <div className="getting-text-main">
+                    <h3>Experienced Team</h3>
+                    <p>Our talents are trained developers, designers and managers with 5+ years of active experience who have seasoned understanding of trends and product delivery across various sectors</p>
+                  </div>
+                  
                 </div>
               </div>
 
               <div className="getting-same">
                 <div className="getting-text">
-                  <img src={strategy} alt="" />
-                  <h3>Full-service web development company  </h3>
-                  <p>From ideation to delivery, maintenance and upgrades, we give you the right team to handle the entire software development process</p>
+                  <img src={strategy} alt="" className="getting-img"/>
+                  <div className="getting-text-main">
+                    <h3>Full-service web development company  </h3>
+                    <p>From ideation to delivery, maintenance and upgrades, we give you the right team to handle the entire software development process</p>
+                  </div>
                 </div>
               </div>
 
               <div className="getting-same">
                 <div className="getting-text">
-                  <img src={quality} alt="" />
-                  <h3>High quality</h3>
-                  <p>You get high quality of service for experienced hands and minds with proper work ethic and delivery</p>
+                  <img src={quality} alt="" className="getting-img"/>
+                  <div className="getting-text-main">
+                    <h3>High quality</h3>
+                    <p>You get high quality of service for experienced hands and minds with proper work ethic and delivery</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -41,6 +41,7 @@ const Hero = () => {
             doings.forEach(doing => {
                 gsap.to(doing, {
                     y:0,
+                    opacity: 1,
                     scrollTrigger:{
                         trigger:doing,
                     }
@@ -58,7 +59,7 @@ const Hero = () => {
             })
             tlthree.to('.home-card1', {y:0, stagger:.2, ease:"back", opacity: 1, delay: 1})
 
-            gsap.to('.home-card2', {y:0, stagger:.2,ease:"back", opacity: 1,
+            gsap.to('.home-card2', {y:0, stagger:.2,ease:"back", opacity: 1, delay: .5,
                 scrollTrigger:{
                     trigger:".home-card2",
                     start:"top 80%"

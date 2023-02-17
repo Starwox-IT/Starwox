@@ -154,6 +154,11 @@
     opacity: 60%;
 }
 
+.ready-custom-portfolio-btn{
+    opacity: 0;
+    transform: translateY(50px);
+}
+
 .getting{
     margin-top: 150px;
     margin-bottom: 150px;
@@ -172,6 +177,8 @@
     font-size: 15px;
 }
 
+
+
 .getting .getting-main{
     display: flex;
     align-items: center;
@@ -187,7 +194,21 @@
     align-items: center;
     text-align: center;
     gap: .8em;
-    
+}
+
+
+
+.getting .getting-text .getting-text-main{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.getting .getting-text .getting-img{
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 .getting .getting-main>:nth-child(1)>.getting-text{

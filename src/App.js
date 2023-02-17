@@ -10,6 +10,8 @@ import './App.css';
 function App() {
 
     return <div className='App'>
+      <div className='fix'></div>
+
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="about" element={<About/>}/>
