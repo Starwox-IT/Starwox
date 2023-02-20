@@ -1,6 +1,7 @@
 .hero{
     width: 90%;
     margin: 0 auto;
+    
 }
 
 .hero .hero-wrapper{
@@ -13,9 +14,9 @@
     align-items: center;
     gap: 1em;
     height: 84vh;
+    /* background-image: url(/src/assets/PATTERN1.png); */
+    
 }
-
-
 
 .hero .hero-wrapper .hero-top .hero-text{
     display: flex;

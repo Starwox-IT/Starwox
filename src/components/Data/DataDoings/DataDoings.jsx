@@ -6,7 +6,7 @@ const DataDoings = (props) => {
     <div className="data-doings">
         <div className="data-doings-wrapper">
             <div className="data-doings-item">
-              <img src={props.image} alt="" />
+              <img src={props.image} alt="" className='data-doings-img'/>
               <div className="data-doings-text">
                   <h3>{props.title}</h3>
                   <p>{props.text}</p>

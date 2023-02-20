@@ -14,6 +14,11 @@ const Hero = () => {
         // This is the timeline for hero section
         let tl = gsap.timeline({defaults: {ease: Power4.easeInOut, duration:2}})
 
+        //This is the annimation for hero section
+        tl.to('.hero-img', {opacity:1, 'transform': 'scale(1)'})
+            .to('.main-hero-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)', opacity:1, y:0,  duration:2.2}, '-=2'
+            )
+
         // This is the timeline for what we do section
         let tltwo = gsap.timeline({
             scrollTrigger: {
@@ -22,14 +27,8 @@ const Hero = () => {
         });
 
         
-
-        //This is the annimation for hero section
-        tl.to('.hero-img', {opacity:1, 'transform': 'scale(1)'})
-            .to('.main-hero-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)', opacity:1, y:0,  duration:2.2}, '-=2'
-            )
-
         //This is the annimation for what we do section    
-        tltwo.to('.hero-bottom-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0', delay: .5})
+        tltwo.to('.hero-bottom-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0'})
             .to('.portfolio-btn-home1', {opacity: 1, y: 0})
 
 
@@ -42,8 +41,10 @@ const Hero = () => {
                 gsap.to(doing, {
                     y:0,
                     opacity: 1,
+                    
                     scrollTrigger:{
                         trigger:doing,
+                        start: "top 70%",
                     }
                 })
             })

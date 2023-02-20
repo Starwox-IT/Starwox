@@ -14,12 +14,23 @@
     align-items: center;
     gap: 2em;
     min-height: 84vh;
+    
 }
 
 .data-hero .data-hero-wrapper .hero-top .hero-text{
     display: flex;
     flex-direction: column;
-    gap: 3em;
+}
+
+.data-hero .data-hero-wrapper .hero-top .data-hero-text{
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.data-hero .data-hero-wrapper .hero-top .data-hero-img{
+    opacity: 0;
+    transform: scale(.5);
 }
 
 .data-hero .data-hero-wrapper .hero-top .hero-text h1{
@@ -30,6 +41,7 @@
     max-width: 510px;
     opacity: 70%;
     font-size: 15px;
+    margin-top: 3em;
 }
 
 .data-hero .data-hero-wrapper .hero-top .hero-text .web-p-bold{
@@ -41,6 +53,18 @@
     margin-bottom: 70px;
     padding-top: 100px;
 }
+
+.data-hero .data-hero-wrapper .hero-bottom .data-service-text{
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.data-hero .data-hero-wrapper .hero-bottom .data-service-portfolio{
+    opacity: 0;
+    transform: translateY(50px)
+}
+
 
 .data-hero .data-hero-wrapper .hero-bottom .hero-text p{
     max-width: 580px;
@@ -62,6 +86,17 @@
     margin-bottom: 150px;
 }
 
+.data-doings-text{
+    opacity: 0;
+    transform: translateY(100px);
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+}
+
+.data-doings-img{
+    opacity: 0;
+    transform: translateY(100px);
+}
+
 @media screen and (max-width: 1038px){
     .data-hero .data-hero-wrapper .hero-top{
         width: 100%;
@@ -70,18 +105,21 @@
 
 @media screen and (max-width: 938px){
     .data-hero .data-hero-wrapper .hero-top img{
-        width: 350px;
+        width: 60% !important;
     }
 }
 
 @media screen and (max-width: 860px){
-    .data-hero{
-        margin-top: 50px;
+    .data-hero .data-hero-wrapper .hero-top img{
+        width: 60% !important;
     }
+
+   
 
     .hero-top{
         flex-direction: column-reverse;
         text-align: center;
+        
     }
 
     .data-hero .data-hero-wrapper .hero-top .hero-text{
@@ -99,7 +137,7 @@
 
 @media screen and (max-width: 490px){
     .data-hero .data-hero-wrapper .hero-top img{
-        width: 80%;
+        width: 90% !important;
     }
 
     .data-hero .data-hero-wrapper .hero-top .hero-text h1{

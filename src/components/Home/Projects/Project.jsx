@@ -62,6 +62,7 @@ const Project = () => {
                     opacity: 1,
                     scrollTrigger:{
                         trigger:project,
+                        start:"top 70%",
                     }
                 })
             })

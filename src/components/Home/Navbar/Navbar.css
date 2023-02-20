@@ -47,10 +47,14 @@
 
 .navbar .navbar-wrapper .nav-items ul a{
     text-decoration: none;
-    color: black;
     font-size: 1.1rem;
+    color: black;
     cursor: pointer;
     font-weight: 400;
+}
+
+.navbar .navbar-wrapper .nav-items ul .active{
+    color: #EC1F2F;
 }
 
 .navbar .navbar-wrapper #hamburger{
@@ -65,39 +69,46 @@
 
 @media screen and (max-width: 828px){
 
+    .navbar .navbar-wrapper .nav-toggle{
+        display: flex;
+        width: 50px;
+        height: 20px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
     .navbar .navbar-wrapper #hamburger{
         display: flex;
         cursor: pointer;
-        padding: 1em;
+        
     }
     
 
-    #hamburger  .bar{
+    #hamburger .nav-toggle> .bar{
         position: relative;
         width: 32px;
         height: 2px;
-        background-color: black;
-        opacity: 40%;
+        background-color: var(--gray);
         transition: all 0.45s ease-in-out;
     }
 
-    #hamburger .bar::before, #hamburger .bar::after{
+    #hamburger .nav-toggle> .bar::before, #hamburger .nav-toggle> .bar::after{
         content: "";
         position: absolute;
         height: 2px;
-        background: black;
-        
+        background: var(--gray);
         border-radius: 2px;
         transition: all .45s ease-in-out;
     }
 
-    #hamburger .bar::before{
+    #hamburger .nav-toggle>.bar::before{
         width: 25px;
         transform: translateY(-8px);
         right: 0;
     }
 
-    #hamburger .bar::after{
+    #hamburger .nav-toggle>.bar::after{
         width: 32px;
         transform: translateY(8px);
     }
@@ -109,7 +120,6 @@
         right: 0;
         width: 100%;
         height: 100vh;
-        
         justify-content: center;
         transform: translate(100%);
         color: white;
@@ -120,6 +130,21 @@
 
     .navbar .navbar-wrapper .nav-items.open{
         transform: translatex(0);
+    }
+
+    #hamburger .nav-toggle.open > .bar{
+        transform: translateX(-40px);
+        background: transparent;
+    }
+
+    #hamburger .nav-toggle.open > .bar::before{
+        width: 32px;
+        transform: rotate(45deg) translate(26px, -26px);
+    }
+
+    #hamburger .nav-toggle.open > .bar::after{
+        width: 32px;
+        transform: rotate(-45deg) translate(26px, 26px);
     }
 
     .navbar .navbar-wrapper .overlay{
@@ -143,8 +168,13 @@
         opacity: 100%;
         z-index: 100000;
     }
+}
 
-    
+@media screen and (max-width: 600px){
+    .navbar .navbar-wrapper .nav-items>ul{
+        width: 55%;
+        
+    }
 }
 
 

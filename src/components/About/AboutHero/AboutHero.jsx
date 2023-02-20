@@ -27,7 +27,7 @@ const AboutHero = () => {
         let tlmission = gsap.timeline({
             scrollTrigger: {
                 trigger: '.mission-heading',
-                start: 'top 100%'
+                start: 'top 90%'
             }
         });
 

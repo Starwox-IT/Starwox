@@ -5,15 +5,16 @@ import Web from 'components/Web/Web';
 import Data from 'components/Data/Data';
 import IT from 'components/IT/IT';
 import './App.css';
+import Navbar from 'components/Home/Navbar/Navbar';
+
+
 
 
 function App() {
-
     return <div className='App'>
-      <div className='fix'></div>
-
+      <Navbar/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home/>}></Route>
         <Route path="about" element={<About/>}/>
         <Route path="web" element={<Web/>}/>
         <Route path="data" element={<Data/>}/>
