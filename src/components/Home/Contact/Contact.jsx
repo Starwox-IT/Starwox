@@ -11,6 +11,7 @@ const Contact = () => {
         gsap.to('.contact-main', {y:0, opacity: 1 ,ease:"back", duration:1,
             scrollTrigger:{
                 trigger:".contact-main",
+                start: "top 80%"
             }
         })
     })

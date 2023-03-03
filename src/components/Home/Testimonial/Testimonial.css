@@ -52,7 +52,8 @@
     position: relative;
     width: max-content;
     margin-bottom: 2em;
-    transform: translateY(100px)
+    transform: translateY(100px);
+    opacity: 0;
     
 }
 

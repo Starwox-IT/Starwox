@@ -110,12 +110,6 @@
     }
 }
 
-@media screen and (max-width: 1000px){
-    .hero-top img{
-        width: 400px !important;
-    }
-}
-
 @media screen and (max-width: 490px){
     .hero .hero-wrapper .hero-top img{
         width: 100% !important;

@@ -12,6 +12,7 @@ const Testimonial = () => {
     let tlthree = gsap.timeline({
       scrollTrigger: {
           trigger: '.review-heading-text',
+          start: "top 80%"
       }
     });
     tlthree.to('.review-heading-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0',})
@@ -20,9 +21,10 @@ const Testimonial = () => {
     
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1067px)", () => {
-      gsap.to('.review-img', {y:0, stagger:.2,ease:"back",
+      gsap.to('.review-img', {y:0, stagger:.2,ease:"back", opacity: 1,
         scrollTrigger:{
           trigger:".review-img",
+          start: "top 70%",
         }
       })
     })
@@ -32,6 +34,7 @@ const Testimonial = () => {
       reviewImgs.forEach(reviewImg => {
         gsap.to(reviewImg, {
           y:0,
+          opacity: 1,
           scrollTrigger:{
             trigger:reviewImg,
           }

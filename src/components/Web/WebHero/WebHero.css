@@ -357,6 +357,10 @@
     .Expertise-main .doings{
         width: 90%;
     }
+
+    .Expertise-main .doings-main{
+        margin-bottom: 70px;
+    }
 }
 
 @media screen and (max-width: 532px){

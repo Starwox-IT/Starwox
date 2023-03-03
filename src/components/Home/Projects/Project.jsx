@@ -16,6 +16,7 @@ const Project = () => {
         let tltwo = gsap.timeline({
             scrollTrigger: {
                 trigger: '.projects-hero-text',
+                start: "top 80%"
             }
         });
    
@@ -45,7 +46,7 @@ const Project = () => {
 
         mm.add("(min-width: 640px)", () => {
             //This is the animation for main project section
-            gsap.to('.project1', {y:0, stagger:.2, opacity: 1,
+            gsap.to('.project1', {y:0, stagger:.2, opacity: 1, duration: 1,
                 scrollTrigger:{
                     trigger:".project1",
                     start: "top 90%",
