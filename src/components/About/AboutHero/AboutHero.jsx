@@ -5,6 +5,8 @@ import './AboutHero.css'
 import personality from 'assets/personality.png'
 import rightarrow from 'assets/right-arrow.png';
 import goal from 'assets/goal.png'
+import star from 'assets/star.png';
+import circle from 'assets/circlewithstar.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,6 +39,8 @@ const AboutHero = () => {
 
   return (
     <div className="about-hero">
+        <img src={star} alt="" className='aboutstar'/>
+        <img src={circle} alt="" className='aboutcircle'/>
         <div className="about-hero-wrapper">
             <div className="about-hero-top">
                 <div className="about-hero-text">

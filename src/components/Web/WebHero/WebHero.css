@@ -2,12 +2,18 @@
     position: relative;
 }
 
-.pattern2{
+.webstar{
     position: absolute;
-    top: 1%;
-    z-index: 1;
-    right: -130px;
-    opacity: 0%;
+    left: -300px;
+    top: -130px;
+    width: 750px;
+}
+
+.webcircle{
+    position: absolute;
+    position: absolute;
+    top: 1% !important;
+    right: 30px;
 }
 
 .web-hero .web-hero-wrapper{

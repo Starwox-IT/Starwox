@@ -6,6 +6,8 @@ import it_illu from 'assets/IT-illustration.png'
 import rightarrow from 'assets/right-arrow.png';
 import { itDoingsData } from 'Data/ITDoings';
 import ITDoings from '../ITDoings/ITDoings';
+import star from 'assets/star.png';
+import circle from 'assets/circlewithstar.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,6 +71,8 @@ const ItHero = () => {
 
   return (
     <div className="it-hero">
+        <img src={star} alt="" className='datastar'/>
+        <img src={circle} alt="" className='datacircle'/>
         <div className="it-hero-wrapper">
             <div className="hero-top">
                 <div className="hero-text it-hero-text">

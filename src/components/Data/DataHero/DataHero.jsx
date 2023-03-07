@@ -6,6 +6,8 @@ import rightarrow from 'assets/right-arrow.png';
 import { dataDoingsData } from 'Data/DataDoings';
 import DataDoings from '../DataDoings/DataDoings';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import star from 'assets/star.png';
+import circle from 'assets/circlewithstar.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,6 +68,8 @@ const DataHero = () => {
     })
   return (
     <div className="data-hero">
+        <img src={star} alt="" className='datastar'/>
+        <img src={circle} alt="" className='datacircle'/>
         <div className="data-hero-wrapper">
             <div className="hero-top">
                 <div className="hero-text data-hero-text">

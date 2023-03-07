@@ -2,6 +2,20 @@
     position: relative;
 }
 
+.datastar{
+    position: absolute;
+    left: -300px;
+    top: -130px;
+    width: 750px;
+}
+
+.datacircle{
+    position: absolute;
+    position: absolute;
+    top: 1% !important;
+    right: 30px;
+}
+
 .data-hero .data-hero-wrapper{
     width: 90%;
     margin: 0 auto;

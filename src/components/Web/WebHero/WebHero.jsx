@@ -3,7 +3,6 @@ import {gsap, Power4 } from 'gsap';
 import './WebHero.css'
 import rightarrow from 'assets/right-arrow.png';
 import web_illu from 'assets/web-illustration.png';
-import pattern1 from 'assets/PATTERN1.png';
 import team from 'assets/web-team.png';
 import { webDoingsData } from 'Data/WebDoings';
 import WebDoings from '../WebDoings/WebDoings';
@@ -12,6 +11,8 @@ import Doings from 'components/Home/Doings/Doings';
 import strategy from 'assets/strategy-icon.png';
 import quality from 'assets/web-quality.png';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import star from 'assets/star.png';
+import circle from 'assets/circlewithstar.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -147,7 +148,8 @@ const WebHero = () => {
 
   return (
     <div className="web-hero">
-      <img src={pattern1} alt="" className='pattern2'/>
+        <img src={star} alt="" className='webstar'/>
+        <img src={circle} alt="" className='webcircle'/>
         <div className="web-hero-wrapper">
           <div className="hero-top">
             <div className="hero-text">

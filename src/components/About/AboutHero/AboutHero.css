@@ -3,6 +3,19 @@
     margin: 0 auto;
 }
 
+.aboutstar{
+    position: absolute;
+    left: -300px;
+    top: -130px;
+    width: 750px;
+}
+
+.aboutcircle{
+    position: absolute;
+    top: 15% !important;
+    right: 30px;
+}
+
 .about-hero .about-hero-wrapper .about-hero-top{
     display: flex;
     width: 90%;
@@ -60,7 +73,6 @@
 
 .hero-text p{
     opacity: 60%;
-    margin-bottom: .5em;
 }
 
 .hero-text .services-list{
@@ -101,6 +113,12 @@
 .mission .mission-heading h1{
     font-size: 3rem;
     margin-bottom: .5em;
+}
+
+@media screen and (max-width: 490px){
+    .star{
+        width: 650px;
+    }
 }
 
 @media screen and (max-width: 846px){

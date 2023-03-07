@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
 import {gsap, Power4 } from 'gsap';
+import { Link } from 'react-router-dom'
 import './Hero.css'
 import illu1 from 'assets/illu 1.png';
 import rightarrow from 'assets/right-arrow.png';
+import star from 'assets/star.png';
+import seemore from 'assets/see-more-arrow.png';
+import circle from 'assets/circlewithstar.png';
 import { doingsData } from 'Data/Doings';
 import Doings from '../Doings/Doings';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -85,11 +89,19 @@ const Hero = () => {
 
   return (
     <div className="hero">
+        <img src={star} alt="" className='homestar'/>
+        <img src={circle} alt="" className='homecircle'/>
         <div className="hero-wrapper">
             <div className="hero-top">
                 <div className="hero-text main-hero-text">
                     <h1>Your <span className="effi">efficient</span> team <br/> beyond walls</h1>
-                    <p>We make business run smoothly by handling your digital processes smoothly with team work and strategic planning. </p>
+                    <p className="main-p-hero">We make business run smoothly by handling your digital processes smoothly with team work and strategic planning. </p>
+                    <Link to='/about'>
+                        <div className="see-more-hero">
+                            <p>see more</p>
+                            <img src={seemore} alt="" style={{width:"10px"}}/>
+                        </div>
+                    </Link>
                 </div>
 
                 <img src={illu1} alt="" className='hero-img'/>
