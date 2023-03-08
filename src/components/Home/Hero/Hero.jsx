@@ -99,7 +99,7 @@ const Hero = () => {
                     <Link to='/about'>
                         <div className="see-more-hero">
                             <p>see more</p>
-                            <img src={seemore} alt="" style={{width:"10px"}}/>
+                            <img src={seemore} alt="" className="seemore" />
                         </div>
                     </Link>
                 </div>
