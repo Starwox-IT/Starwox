@@ -163,3 +163,22 @@
         width: 100px;
     }
 }
+
+@media screen and (max-width: 470px){
+    .aboutstar{
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .aboutstar{
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 366px){
+    .aboutstar{
+        width: 600px;
+    }
+    
+}
