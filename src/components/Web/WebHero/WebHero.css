@@ -117,8 +117,7 @@
     width: 95%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     grid-gap: 2em;
     margin-left: 50px;
     
@@ -126,7 +125,6 @@
 
 .Expertise-main .doings{
     width: 100%;
-
 }
 
 .expert-same{
@@ -329,6 +327,10 @@
 }
 
 @media screen and (max-width: 1127px){
+    .Expertise-main{
+        grid-template-columns: repeat(auto-fill, minmax(50%, 50%));
+    }
+
     .Expertise-main>:nth-child(3){
         grid-column-start: 1;
         grid-column-end: 3;
