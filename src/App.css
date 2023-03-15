@@ -34,6 +34,7 @@ html *, html *::before, html *::after {
   overflow: hidden;
   padding-top: 70px;
   font-family: 'inter';
+  scroll-behavior: smooth;
 }
 
 input,
@@ -44,9 +45,7 @@ a{
   -webkit-tap-highlight-color: transparent;
 }
 
-.App .open{
-  overflow: hidden;
-}
+
 
 /* body{
   position: fixed;
@@ -79,7 +78,7 @@ a{
 }
 
 *{
-  scroll-behavior: smooth;
+  scroll-behavior: none;
 }
 
 @media screen and (max-width: 702px){

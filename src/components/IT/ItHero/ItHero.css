@@ -17,7 +17,7 @@
 }
 
 .it-hero .it-hero-wrapper .hero-top img{
-    width: 500px;
+    width: clamp(500px, 30vw, 700px);
     opacity: 0;
     transform: scale(.5);
 }
@@ -35,7 +35,7 @@
 }
 
 .it-hero .it-hero-wrapper .hero-top .hero-text h1{
-    font-size: 3rem;
+    font-size: clamp(3rem, 4vw, 5rem);
 }
 
 .it-hero .it-hero-wrapper .hero-top .hero-text>:nth-child(2){

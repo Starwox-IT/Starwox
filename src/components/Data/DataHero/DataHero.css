@@ -45,17 +45,18 @@
 .data-hero .data-hero-wrapper .hero-top .data-hero-img{
     opacity: 0;
     transform: scale(.5);
+    width: clamp(500px, 30vw, 570px);
 }
 
 .data-hero .data-hero-wrapper .hero-top .hero-text h1{
-    font-size: 3.5rem;
+    font-size: clamp(3rem, 5vw, 6rem);
 }
 
 .data-hero .data-hero-wrapper .hero-top .hero-text>:nth-child(3){
-    max-width: 510px;
+    max-width: max(500px, 70%);
     opacity: 70%;
-    font-size: 15px;
-    margin-top: 3em;
+    font-size: clamp(15px, 1vw, 30px);
+    margin-top: 2em;
 }
 
 .data-hero .data-hero-wrapper .hero-top .hero-text .web-p-bold{
@@ -128,7 +129,7 @@
         width: 60% !important;
     }
 
-   
+    
 
     .hero-top{
         flex-direction: column-reverse;

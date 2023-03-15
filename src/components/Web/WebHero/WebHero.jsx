@@ -153,9 +153,9 @@ const WebHero = () => {
         <div className="web-hero-wrapper">
           <div className="hero-top">
             <div className="hero-text">
-                <h1><span className="main-red">Web </span>Development</h1>
-                <p className='web-p-bold'>Together we will build the website you need...</p>
-                <p>We take care to build the websites your brand needs, taking your needs, brand message and target market into full account.</p>
+              <h1><span className="main-red">Web </span>Development</h1>
+              <p className='web-p-bold'>Together we will build the website you need...</p>
+              <p>We take care to build the websites your brand needs, taking your needs, brand message and target market into full account.</p>
             </div>
 
             <img src={web_illu} alt="" className="web-hero-img"/>
