@@ -70,7 +70,7 @@ export  const doingsData = [
         description: 'Whether you need just one or a mix of our services, we can work out a suitable arrangement for you.',
         arrow: arrow,
         see: "see more",
-        link: "",
+        link: "#form",
         class: "home-card2"
     },
 ]

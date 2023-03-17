@@ -7,6 +7,7 @@ import Data from 'components/Data/Data';
 import IT from 'components/IT/IT';
 import './App.css';
 import Navbar from 'components/Home/Navbar/Navbar';
+import Project from 'components/Projects/Project';
 
 
 
@@ -22,6 +23,7 @@ function App() {
             <Route path="web" element={<Web/>}/>
             <Route path="data" element={<Data/>}/>
             <Route path="IT" element={<IT/>}/>
+            <Route path="project" element={<Project/>}/>
           </Routes>
         </ScrollToTop>
       </Router>

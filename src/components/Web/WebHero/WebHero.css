@@ -63,6 +63,11 @@
     font-size: 15px;
 }
 
+.web-hero .web-hero-wrapper .hero-bottom .web-bottom-text h1{
+    margin-bottom: .5em;
+    font-size: clamp(2.2rem, 3vw, 5rem);
+}
+
 .web-hero .web-hero-wrapper .hero-bottom .web-bottom-text{
     width: fit-content;
 }
@@ -96,6 +101,12 @@
     margin-bottom: 150px;
 }
 
+/* .web-doing-display>:nth-child(2){
+    align-self: flex-end;
+    align-items: flex-end;
+    justify-self: end;
+} */
+
 .web-doings-img{
     opacity: 0;
     transform: translateY(100px);
@@ -109,6 +120,7 @@
 
 .Expertise h1{
     margin-bottom: 100px;
+    font-size: clamp(2rem, 2.5vw, 5rem);
 }
 
 .Expertise-main{
@@ -144,11 +156,18 @@
     visibility: hidden;
 }
 
+.ready-custom-main{
+    padding: 10em 0;
+}
+
 .ready-custom>:nth-child(1){
     margin-bottom: .2em;
+    font-size: clamp(2.2rem, 3vw, 3rem);
 }
+
 .ready-custom>:nth-child(2){
     margin-bottom: .2em;
+    font-size: clamp(2.2rem, 2.5vw, 3rem);
 }
 
 .ready-custom>:nth-child(3){
@@ -162,7 +181,6 @@
 }
 
 .getting{
-    margin-top: 150px;
     margin-bottom: 150px;
 }
 
@@ -172,6 +190,7 @@
 
 .getting .getting-text-h1 h1{
     margin-bottom: .5em;
+    font-size: clamp(2.2rem, 3vw, 3rem);
 }
 
 .getting .getting-text p{
@@ -219,7 +238,7 @@
 
 .getting .getting-main>:nth-child(2)>.getting-text{
     width: fit-content;
-   margin-left: auto;
+    margin-left: auto;
 }
 
 .getting .getting-main>:nth-child(1){
@@ -235,6 +254,29 @@
 
 .getting .getting-main .getting-same .getting-text p{
     max-width: 400px;
+}
+
+@media screen and (max-width: 594px){
+    .getting .getting-text-h1{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1723px){
+    .web-doing-display{
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+        grid-row-gap: 6em;
+    }
+
+    .web-doings .web-doings-wrapper .web-doings-item{
+        gap: 1em !important;
+    }
+}
+
+@media screen and (max-width: 1068px){
+    .ready-custom > :nth-child(3){
+        max-width: 500px;
+    }
 }
 
 @media screen and (max-width: 880px){
@@ -303,12 +345,12 @@
 @media screen and (max-width: 482px){
     .web-doing-display{
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        grid-row-gap: 1em;
     }
+
     .doings-main{
         width: 100%;
     }
-
-    
 }
 
 @media screen and (max-width: 613px){

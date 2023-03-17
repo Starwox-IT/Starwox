@@ -1,0 +1,10 @@
+.project{
+    text-align: center;
+    color: var(--mainRed);
+    vertical-align: middle;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}

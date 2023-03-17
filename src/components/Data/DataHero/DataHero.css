@@ -89,6 +89,7 @@
 
 .data-hero .data-hero-wrapper .hero-bottom .hero-text h1{
     margin-bottom: .5em;
+    font-size: clamp(2.2rem, 3.3vw, 3rem);
 }
 
 .data-doing-display{
@@ -96,6 +97,7 @@
     gap: 1em;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     align-items: center;
+    width: 100%;
     justify-content: center;
     height: 100%;
     margin-bottom: 150px;

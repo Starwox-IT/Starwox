@@ -50,7 +50,7 @@ const Navbar = () => {
                 
               <NavLink to='/about'>About us</NavLink>
                 
-              <NavLink to='/h'>Portfolio</NavLink>
+              <NavLink to='/project'>Portfolio</NavLink>
             </ul>
           </div>
 

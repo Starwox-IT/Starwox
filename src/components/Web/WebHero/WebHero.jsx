@@ -184,7 +184,7 @@ const WebHero = () => {
             </div>
           </div>
 
-          <div className="hero-bottom">
+          <div className="hero-bottom ready-custom-main">
             <div className="ready-custom web-doings-text">
               <h1>Ready-made or custom?</h1>
               <h1 className="main-red">We develop both</h1>
