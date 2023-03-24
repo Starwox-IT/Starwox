@@ -35,6 +35,8 @@ html *, html *::before, html *::after {
   padding-top: 70px;
   font-family: 'inter';
   scroll-behavior: smooth;
+  position: relative;
+  z-index: 100;
 }
 
 input,
