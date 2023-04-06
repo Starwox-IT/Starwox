@@ -55,7 +55,7 @@ const AboutHero = () => {
             <div className="hero-bottom" id='services'>
                 <div className="hero-text about-bottom-hero-text">
                     <h1>Our <span className="main-red">services</span></h1>
-                    <p>We provide the following services:</p>
+                    <p>We provide the following services;</p>
                     <ul className="services-list">
                         <li>Full stack development and maintenance</li>
                         <li>Virtual assistant and IT support</li>

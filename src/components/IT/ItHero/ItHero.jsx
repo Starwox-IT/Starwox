@@ -77,7 +77,7 @@ const ItHero = () => {
             <div className="hero-top">
                 <div className="hero-text it-hero-text">
                     <h1><span className="main-red">IT </span>support & cyber security</h1>
-                    <p className='web-p-bold'>when you need someone to work in the background, we’ re here</p>
+                    <p className='web-p-bold'>when you need someone to work in the background, we’re here</p>
                     <p>We assist and support businesses by deploying cutting-edge IT solutions that add value and improve operational efficiencies.</p>
                 </div>
 

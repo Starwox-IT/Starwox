@@ -1,5 +1,6 @@
 .it-doings{
     padding: 1em;
+    width: 100%;
 }
 
 .it-doings .it-doings-wrapper .it-doings-item{
@@ -20,7 +21,6 @@
 .it-doings .it-doings-wrapper .it-doings-item .it-doings-text p{
     font-size: 13px;
     opacity: 61%;
-    max-width: 300px;
 }
 
 @media screen and (max-width: 1124px){

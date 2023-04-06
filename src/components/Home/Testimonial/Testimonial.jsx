@@ -29,14 +29,14 @@ const Testimonial = () => {
     gsap.to('.testimonialRight', {x:0, ease: "bounce(.3)",
       scrollTrigger:{
         trigger:".testimonialRight",
-        start: "top 80%",
+        start: "top 90%",
       }
     })
 
     gsap.to('.testimonialLeft', {x:0, ease: "bounce(.3)",
       scrollTrigger:{
         trigger:".testimonialLeft",
-        start: "top 80%",
+        start: "top 90%",
       }
     })
     

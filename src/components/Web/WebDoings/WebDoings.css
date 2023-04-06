@@ -1,5 +1,6 @@
 .web-doings{
     padding: 1em;
+    width: 100%;
 }
 
 .web-doings .web-doings-wrapper .web-doings-item{
@@ -20,7 +21,6 @@
 .web-doings .web-doings-wrapper .web-doings-item .web-doings-text p{
     font-size: 13px;
     opacity: 61%;
-    max-width: 250px;
 }
 
 @media screen and (max-width: 988px){

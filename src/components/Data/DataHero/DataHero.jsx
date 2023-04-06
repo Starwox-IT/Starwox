@@ -74,7 +74,8 @@ const DataHero = () => {
             <div className="hero-top">
                 <div className="hero-text data-hero-text">
                     <h1><span className="main-red">Data</span> Analysis</h1>
-                    <p className='web-p-bold'>Knowledge is power! Transform Big Data Useful Insights</p>
+                    <p className='web-p-bold'>Knowledge is power!</p>
+                    <p className="web-p-bold">Transform Big Data Useful Insights.</p>
                     <p>You need to make the right decisions to constantly grow your business. It is important that your data is well-interpreted for understood for you to do that</p>
                 </div>
 

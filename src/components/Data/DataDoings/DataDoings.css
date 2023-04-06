@@ -1,10 +1,12 @@
 .data-doings{
     padding: 1em;
+    width: 100%;
 }
 
 .data-doings .data-doings-wrapper .data-doings-item{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 3em;
 }
 
@@ -19,7 +21,6 @@
 .data-doings .data-doings-wrapper .data-doings-item .data-doings-text p{
     font-size: 13px;
     opacity: 61%;
-    max-width: 300px;
 }
 
 @media screen and (max-width: 1006px){

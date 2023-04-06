@@ -56,7 +56,7 @@
 
 
 .hero-text h1{
-    margin-bottom: .5em;
+    margin-bottom: .2em;
     font-size: 3rem;
 }
 
@@ -72,7 +72,9 @@
 }
 
 .hero-text p{
-    opacity: 60%;
+    opacity: 80%;
+    font-size: 1.2rem;
+    margin-bottom: .5em;
 }
 
 .hero-text .services-list{
@@ -92,17 +94,33 @@
 }
 
 .mission{
-    display: flex;
+    padding: 7em 0;
     align-items: center;
+    justify-content: center;
+    gap: 1em;
     margin-bottom: 100px;
+    position: relative;
+    display: flex;
+
 }
+
+/* .mission::after{
+    content: url(/src/assets/goal.png);
+    position: absolute;
+    display: inline;
+    margin-top: 70px;
+    line-height: normal;
+    vertical-align: middle;
+    right: 0;
+    top: 0;
+} */
 
 .mission .mission-heading{
     text-align: center;
-    width: 100%;
     clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
     opacity: 0;
     transform: translateY(100px);
+    margin-left: 150px;
 }
 
 .mission .mission-img{
@@ -161,6 +179,10 @@
 
     .mission .mission-img img{
         width: 100px;
+    }
+
+    .mission .mission-heading{
+        margin-left: 0px;
     }
 }
 
