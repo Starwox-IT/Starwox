@@ -95,7 +95,7 @@
 
 .web-doing-display{
     display: grid;
-    gap: 1em;
+    gap: 8em;
     grid-row-gap: 4em;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     margin-bottom: 150px;

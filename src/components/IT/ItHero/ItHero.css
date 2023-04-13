@@ -82,7 +82,7 @@
     grid-row-gap: 4em;
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    margin-bottom: 70px;
+    margin-bottom: 130px;
 }
 
 .it-doings-text{

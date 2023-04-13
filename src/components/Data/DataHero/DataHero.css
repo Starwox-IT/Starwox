@@ -62,6 +62,12 @@
     margin-bottom: 2em;
 }
 
+.data-hero .data-hero-wrapper .hero-top .hero-text>:nth-child(4){
+    max-width: max(500px, 70%);
+    opacity: 70%;
+    font-size: clamp(15px, 1vw, 30px);
+}
+
 .data-hero .data-hero-wrapper .hero-top .hero-text .web-p-bold{
     font-size: 20px;
     opacity: 70%;
@@ -69,7 +75,7 @@
 }
 
 .data-hero .data-hero-wrapper .hero-bottom{
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     padding-top: 100px;
 }
 
@@ -98,18 +104,14 @@
 
 .data-doing-display{
     display: grid;
-    gap: 1em;
+    gap: 5em;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    background-image: url(/src/assets/star.png);
-    background-size: 35%;
-    background-repeat: no-repeat;
-    background-position: center;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     padding: 4em 0;
     height: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 
 .data-doings-text{
