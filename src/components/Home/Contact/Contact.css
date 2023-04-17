@@ -85,6 +85,12 @@
     font-weight: 400;
 }
 
+.contact .contact-wrapper .contact-main #form .contact-same textarea::placeholder{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+}
+
 .contact .contact-wrapper .contact-main #form .submit{
     text-align: center;
 }
