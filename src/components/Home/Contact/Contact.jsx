@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
+import emailjs from '@emailjs/browser';
 import {gsap} from 'gsap';
 import './Contact.css'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -16,6 +17,27 @@ const Contact = () => {
         })
     })
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+            'service_x76zck9',
+            'template_l5ga0na',
+            form.current, 
+            'VEUpwO1PVay1bFFWh'
+        )
+        .then((result) => {
+            console.log(result.text);
+            console.log("message sent")
+            e.target.reset()
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
+
   return (
     <div className="contact">
         <div className="contact-wrapper">
@@ -25,22 +47,18 @@ const Contact = () => {
             </div>
 
             <div className="contact-main">
-                <form action="" id='form'>
+                <form ref={form} id='form' onSubmit={sendEmail}>
                     <div className="name contact-same">
-                        {/* <label htmlFor="name">Your Name</label> */}
-                        <input type="text" id='name' name='name'placeholder="Your Name"/>
+                        <input type="text" id='name' name='name' placeholder="Your Name" required/>
                     </div>
                     <div className="name contact-same">
-                        {/* <label htmlFor="phone">Phone Number</label> */}
-                        <input type="text" id='phone' name='phone' placeholder="Phone Number"/>
+                        <input type="text" id='phone' name='phone' placeholder="Phone Number" required/>
                     </div>
                     <div className="name contact-same">
-                        {/* <label htmlFor="address">Email Address</label> */}
-                        <input type="text" id='address' name='address' placeholder="Email Address"/>
+                        <input type="email" id='email' name='email' placeholder="Email Address" required/>
                     </div>
                     <div className="name contact-same">
-                        {/* <label htmlFor="about">Tell us about your project</label> */}
-                        <input type="text" id='about' name='about' placeholder="Type your message..."/>
+                        <textarea type="text" id='message' name='message' placeholder="Type your message..." required/>
                     </div>
 
                     <div className="submit">

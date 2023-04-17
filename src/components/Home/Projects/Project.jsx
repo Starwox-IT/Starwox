@@ -3,9 +3,9 @@ import {gsap, Power4 } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './project.css'
 import rightarrow from 'assets/right-arrow.png';
-import project1 from 'assets/project1.png'
-import project2 from 'assets/project2.png'
-import project3 from 'assets/project3.png'
+import project1 from 'assets/project1.jpg'
+import project2 from 'assets/project2.jpg'
+import project3 from 'assets/project3.jpg'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -103,16 +103,16 @@ const Project = () => {
                     <div className="project1">
                         <img src={project2} alt="" />
                         <div className="project1-text">
-                            <p>AFC</p>
-                            <p>VPN setup</p>
+                            <p>Elotech</p>
+                            <p>Web Development</p>
                         </div>
                     </div>
 
-                    <div className="project1">
+                    <div className="project1 project3">
                         <img src={project3} alt="" />
                         <div className="project1-text">
-                            <p>ClikkiClikki</p>
-                            <p>Data Analysis</p>
+                            <p>Safewox</p>
+                            <p>Web Development</p>
                         </div>
                     </div>
                 </div>

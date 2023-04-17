@@ -38,6 +38,7 @@
 .main-projects{
     display: flex;
     justify-content: center;
+    align-self: stretch;
 }
 
 .main-project-wrapper{
@@ -47,8 +48,8 @@
     /* justify-items: center; */
     gap: 3em;
     justify-content: center;
+    height: 100%;
     display: flex;
-    
     text-align: center;
 }
 
@@ -59,6 +60,12 @@
     border-radius: 22px;
     margin-bottom: 10px;
 }
+
+/* .main-project-wrapper .project3{
+    justify-self: stretch;
+    align-self: stretch;
+    justify-self: stretch;
+} */
 
 .main-project-wrapper .project1{
     width: 100%;
