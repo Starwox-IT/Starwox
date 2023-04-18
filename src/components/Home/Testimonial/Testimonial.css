@@ -47,7 +47,6 @@
     margin-bottom: 6em;
     position: relative;
     width: 100%;
-    
 }
 
 #swiper-slide-outer{
@@ -59,6 +58,7 @@
     position: relative !important;
     padding: 1em 0em !important;
     width: 100% !important;
+    height: 100%;
     max-width: 1920px !important;
 }
 
@@ -86,6 +86,7 @@
     box-shadow: -1px -1px 15px 1px rgba(0, 0, 0, 0.08);
     position: relative;
     z-index: 1000;
+    height: auto;
 }
 
 /* @media screen and (min-width: 574px) {

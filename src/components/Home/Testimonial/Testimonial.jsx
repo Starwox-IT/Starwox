@@ -101,10 +101,10 @@ const Testimonial = () => {
           className="reviews"
           modules={[ Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={25}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2000,
+          //   disableOnInteraction: false,
+          // }}
           centerSlide={true}
           grabCursor={true}
           slidesPerView={4}

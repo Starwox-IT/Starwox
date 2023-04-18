@@ -94,7 +94,7 @@
 .see-more-hero p{
     color: white;
     z-index: 11111;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .see-more-hero img{

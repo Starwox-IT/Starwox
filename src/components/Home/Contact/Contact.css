@@ -63,6 +63,7 @@
     border: none;
     border-radius: 15px;
     padding: .8em .8em .8em 1.5em;
+    font-family: 'inter';
     outline: none;
     font-size: 1.1rem;
 }
@@ -77,18 +78,19 @@
     resize: none;
     height: 100px;
     font-size: 1.1rem;
+    font-family: 'inter';
 }
 
 .contact .contact-wrapper .contact-main #form .contact-same input::placeholder{
     color: #000000;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .contact .contact-wrapper .contact-main #form .contact-same textarea::placeholder{
     color: #000000;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .contact .contact-wrapper .contact-main #form .submit{
@@ -104,3 +106,4 @@
     cursor: pointer;
     color: white;
 }
+ 
