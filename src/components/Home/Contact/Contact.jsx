@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import {gsap} from 'gsap';
 import './Contact.css'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,15 +30,38 @@ const Contact = () => {
             'template_l5ga0na',
             form.current, 
             'VEUpwO1PVay1bFFWh'
-        )
+        ) 
         .then((result) => {
-            console.log(result.text);
+            console.log(result.text)
             console.log("message sent")
             e.target.reset()
+            toast.success('Your Form has been recieved', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            })
+                
         }, (error) => {
             console.log(error.text);
+            toast.error('An error occured', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
         });
     }
+
+    
 
   return (
     <div className="contact">
@@ -52,7 +77,7 @@ const Contact = () => {
                         <input type="text" id='name' name='name' placeholder="Your Name" required/>
                     </div>
                     <div className="name contact-same">
-                        <input type="text" id='phone' name='phone' placeholder="Phone Number" required/>
+                        <input type="tel" id='phone' name='phone' placeholder="Phone Number" pattern="^([0|\+[0-9]{1,5})?([0-9]{10})$" minlength="11" maxlength="13" title="Please enter a correct phone number" required/>
                     </div>
                     <div className="name contact-same">
                         <input type="email" id='email' name='email' placeholder="Email Address" required/>
@@ -63,10 +88,12 @@ const Contact = () => {
 
                     <div className="submit">
                         <button type='submit'>Submit</button>
+                        
                     </div>
                 </form>
             </div>
         </div>
+        <ToastContainer />
     </div>
   )
 }

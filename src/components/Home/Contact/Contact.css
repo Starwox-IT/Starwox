@@ -106,4 +106,8 @@
     cursor: pointer;
     color: white;
 }
- 
+
+/* I changed the position for toastify here because it was been covered */
+.Toastify__toast-container--top-right{
+    top: 4em !important;
+}
