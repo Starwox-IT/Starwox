@@ -2,6 +2,7 @@
     width: 90%;
     margin: 0 auto;
     margin-bottom: 70px;
+    padding-top: 6rem;
 }
 
 .contact .contact-wrapper .contact-heading{
@@ -40,6 +41,7 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
+    
 }
 
 .contact .contact-wrapper .contact-main{
@@ -85,12 +87,14 @@
     color: #000000;
     font-size: 15px;
     font-weight: 600;
+    opacity: 50%;
 }
 
 .contact .contact-wrapper .contact-main #form .contact-same textarea::placeholder{
     color: #000000;
     font-size: 15px;
     font-weight: 600;
+    opacity: 50%;
 }
 
 .contact .contact-wrapper .contact-main #form .submit{

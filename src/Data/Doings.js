@@ -16,6 +16,7 @@ export  const doingsData = [
         arrow: arrow,
         see: "see more",
         link:"web",
+        link1: "link1",
         class: "home-card1"
     },
 
@@ -27,6 +28,7 @@ export  const doingsData = [
         arrow: arrow,
         see: "see more",
         link: "data",
+        link1: "link1",
         class: "home-card1"
     },
 
@@ -38,6 +40,7 @@ export  const doingsData = [
         arrow: arrow,
         see: "see more",
         link: "IT",
+        link1: "link1",
         class: "home-card1"
     },
 
@@ -49,6 +52,7 @@ export  const doingsData = [
         arrow: arrow,
         see: "see more",
         link: "",
+        hashlink: "#form",
         class: "home-card2"
     },
 
@@ -60,6 +64,7 @@ export  const doingsData = [
         arrow: arrow,
         see: "see more",
         link: "",
+        hashlink: "#form",
         class: "home-card2"
     },
 
@@ -70,7 +75,7 @@ export  const doingsData = [
         description: 'Whether you need just one or a mix of our services, we can work out a suitable arrangement for you.',
         arrow: arrow,
         see: "see more",
-        link: "#form",
+        hashlink: "#form",
         class: "home-card2"
     },
 ]

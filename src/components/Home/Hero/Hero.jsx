@@ -82,6 +82,9 @@ const Hero = () => {
                 description={doing.description}
                 see={doing.see}
                 link={doing.link}
+                link1={doing.link1}
+                id={doing.id}
+                hashlink={doing.hashlink}
                 class={doing.class}
             />
         )
