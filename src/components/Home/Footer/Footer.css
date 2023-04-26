@@ -14,7 +14,7 @@
 
 .footer .footer-wrapper .footer-left{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 3em;
     width: 40%;
 }
@@ -34,6 +34,8 @@
 
 .footer .footer-wrapper .social .email{
     color: #FDF7F7;
+    font-size: 13px;
+    color: #D0CDCD;
 }
 
 .footer .footer-wrapper .social img{
@@ -51,8 +53,8 @@
 }
 
 .numbers p{
-    color: #FDF7F7;
-    font-size: 15px;
+    color: #D0CDCD;
+    font-size: 13px;
     text-decoration-line: underline;
 }
 
@@ -68,8 +70,9 @@
 }
 
 .footer .footer-wrapper .office p{
-    color: #FDF7F7;
+    color: #D0CDCD;
     max-width: 300px;
+    font-size: 13px;
 }
 
 .footer .footer-wrapper .footer-links h4{
@@ -94,6 +97,11 @@
     color: #D0CDCD;
 }
 
+.footer .footer-wrapper .footer-links .resource .resource-main p{
+    color: #D0CDCD;
+    font-size: 13px;
+}
+
 .footer .footer-wrapper .footer-links{
     display: flex;
     flex-direction: column;
@@ -108,7 +116,7 @@
 .footer .footer-wrapper .footer-links .main-footer-links .navbar-nav a{
     color: #D0CDCD;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 
@@ -118,7 +126,7 @@
 }
 
 .footer .footer-wrapper .icons a{
-    color: #8B8282;
+    color: #D0CDCD;
     font-size: 1.2rem;
 }
 
