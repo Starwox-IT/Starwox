@@ -40,44 +40,6 @@ const Testimonial = () => {
       }
     })
     
-    // let mm = gsap.matchMedia();
-    // mm.add("(min-width: 1067px)", () => {
-    //   gsap.set('.review-main', {y:100, opacity: 1})
-    //   gsap.to('.review-main', {y:0, stagger:.2,ease:"back", opacity: 1,
-    //     scrollTrigger:{
-    //       trigger:".review-main",
-    //       start: "top 70%",
-    //     }
-    //   })
-    // })
-
-    // mm.add("(max-width: 1066px)", () => {
-    //   const reviewImgs = gsap.utils.toArray(".review-img");
-    //   reviewImgs.forEach(reviewImg => {
-    //     gsap.to(reviewImg, {
-    //       y:0,
-    //       opacity: 1,
-    //       scrollTrigger:{
-    //         trigger:reviewImg,
-    //       }
-    //     })
-    //   })
-    // })
-
-    // const reviewTexts = gsap.utils.toArray(".review-text-main");
-    //   reviewTexts.forEach(reviewText => {
-    //     gsap.to(reviewText, {
-    //       ease: Power4.easeInOut,
-    //       y:0,
-    //       'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',
-    //       duration: 1,
-          
-    //       scrollTrigger:{
-    //         trigger:reviewText,
-    //         start: "top 100%",
-    //       }
-    //     })
-    // })
     
   })
 
@@ -109,7 +71,6 @@ const Testimonial = () => {
           grabCursor={true}
           slidesPerView={4}
           pagination={{ clickable: true, dynamicBullets: true }}
-          onSwiper={(swiper) => console.log(swiper)}
           loop={true}
           breakpoints={{
             0: {

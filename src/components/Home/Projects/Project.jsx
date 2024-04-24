@@ -9,7 +9,6 @@ import project3 from 'assets/project3.jpg'
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const Project = () => {
     useEffect(()=> {
         // This is the animation for what we do section
@@ -22,8 +21,6 @@ const Project = () => {
    
         tltwo.to('.projects-hero-text', {'clip-path': 'polygon(0% 100%, 99% 100%, 100% 0%, 0% 0%)',opacity: 1,y: '0',})
             .to('.projects-hero-btn', {opacity: 1, y: 0})
-
-        
 
         //This is so awesome, it means you can change classNames to an array and loop through then
         const projectNames = gsap.utils.toArray(".project1-text");
@@ -68,12 +65,9 @@ const Project = () => {
                 })
             })
         })
-            
     }, [])
 
     
-
-
 
   return (
     <div className="home-project">

@@ -45,7 +45,6 @@ const Hero = () => {
                 gsap.to(doing, {
                     y:0,
                     opacity: 1,
-                    
                     scrollTrigger:{
                         trigger:doing,
                         start: "top 70%",

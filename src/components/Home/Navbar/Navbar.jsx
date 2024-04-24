@@ -20,7 +20,6 @@ const Navbar = () => {
   document.onclick = function(clickEvent){
     if(clickEvent.target.className !== "nav-items" && clickEvent.target.id !== "hamburger"){
         setIsOpen(false)
-   
     }
   }
 

@@ -16,7 +16,6 @@ const Doings = (props) => {
     hashlink = (props.hashlink)
   }
 
-
   return (
     <div className={`doings-main ${props.class}`}>
       <div className="doings">

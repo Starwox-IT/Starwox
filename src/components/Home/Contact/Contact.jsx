@@ -17,7 +17,7 @@ const Contact = () => {
                 start: "top 80%"
             }
         })
-    })
+    },)
 
     const form = useRef();
 
@@ -62,7 +62,6 @@ const Contact = () => {
     }
 
     
-
   return (
     <div className="contact" id="form">
         <div className="contact-wrapper">
@@ -88,7 +87,6 @@ const Contact = () => {
 
                     <div className="submit">
                         <button type='submit'>Submit</button>
-                        
                     </div>
                 </form>
             </div>

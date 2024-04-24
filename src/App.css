@@ -10,6 +10,21 @@ html *, html *::before, html *::after {
   padding: 0;
 }
 
+::-webkit-scrollbar{
+  height: 12px;
+  width: 12px;
+}
+  
+::-webkit-scrollbar-track{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #EC1F2F;
+  border-radius: 1px;
+}
+
 @font-face {
   font-family: 'inter';
   src: url(fonts/Inter-Medium.otf) format('opentype');
@@ -30,7 +45,7 @@ html *, html *::before, html *::after {
 
 .App{
   margin: 0 auto;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   overflow: hidden;
   padding-top: 70px;
   font-family: 'inter';

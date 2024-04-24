@@ -68,7 +68,6 @@
 
 
 @media screen and (max-width: 828px){
-
     .navbar .navbar-wrapper .nav-toggle{
         display: flex;
         width: 50px;
